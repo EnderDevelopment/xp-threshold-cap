@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.gradle' version '7.0.+' 
+}
+
+group = 'com.enderdevelopment'
+version = '1.0.0'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = '21.1.172'
+}
+
+sourceSets.main.resources.srcDir 'src/generated/resources'
+
+repositories {
+    mavenCentral()
+}
